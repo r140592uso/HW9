@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/resetcss.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section>
+      <form action="" id="registration-form" method="POST">
+        <div>
+          <label for="username">Username</label>
+          <input type="text" name="myusername" id="username" />
+          <span class="error-text" id="error_myusername"></span>
+        </div>
+        <div>
+          <label for="password">My password</label>
+          <input
+            class="showhide"
+            type="password"
+            name="mypassword"
+            id="password"
+            placeholder="Password"
+          />
+          <span class="error-text" id="error_mypassword"></span>
+          <i class="fa-sharp fa-solid fa-eye" id="toggleicon"></i>
+        </div>
+        <div>
+          <label for="password2">My password</label>
+          <input
+            class="showhide"
+            type="password"
+            name="mypassword2"
+            id="password2"
+            placeholder="Repeate Password"
+          />
+          <span class="error-text" id="error_mypassword2"></span>
+        </div>
+        <div>
+          <input type="radio" name="age" id="age1" />
+          <label for="age1">18-30</label>
+          <span class="error-text" id="error_age"></span>
+
+          <input type="radio" name="age" id="age2" />
+          <label for="age2">30-45</label>
+          <span class="error-text" id="error_age"></span>
+        </div>
+        <div>
+          <input type="checkbox" id="agree" name="agree" />
+
+          <label for="agree">I agree Terms and Conditions</label>
+          <span class="error-text" id="error_agree"></span>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
